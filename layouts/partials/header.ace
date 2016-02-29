@@ -1,0 +1,7 @@
+header#itsHeader
+  {{ $itsTitle := index .Site.Data.titles.de .Title }}
+  {{ if $itsTitle }}
+  h1 {{ $itsTitle }}
+  {{ else }}
+  h1 {{ .Title }}
+  {{ end }}

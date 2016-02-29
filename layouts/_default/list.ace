@@ -1,0 +1,17 @@
+{{ partial "htmlroot" . }}
+  main
+    {{ partial "header" . }}
+    {{ partial "navigation" . }}
+    section#itsMainSection
+      {{ range .Data.Pages }}
+      article.summary
+        header
+          h1 
+            a href="{{.Permalink}}"
+              {{ .Title }}
+        div
+          |  
+            {{ .Summary }}
+            ⋯
+      {{ end }}
+    {{ partial "footer" .}}

@@ -1,0 +1,26 @@
+nav#itsMainNav
+  ul
+    li.menuToplevel
+      a.navItem href={{.Site.BaseURL}} ⌘
+    {{ range .Site.Menus.main }}
+    li.menuToplevel 
+      {{ if not .HasChildren }}
+      a.navItem href={{.URL}}
+        {{ .Name }}
+      {{ else }}
+      span.navFolder
+        {{ .Name }}
+      nav
+        ul
+          {{ range .Children }}
+          li.menu
+            {{ if not .HasChildren }}
+            a.navItem href={{.URL}}
+              {{ .Name }}
+            {{ else }}
+            span.navFolder
+              {{ .Name }}
+            {{ end }}
+          {{ end }}
+      {{ end }}
+    {{ end }}

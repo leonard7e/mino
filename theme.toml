@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Mino"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+description = "A hugo theme which supports nested menus"
+homepage = "https://github.com/leonard7e/mino"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.15
+
+[author]
+  name = "Leonard Siebeneicher"
+  homepage = "https://leonard7e.ovh"

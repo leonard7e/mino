@@ -1,0 +1,13 @@
+= doctype html
+html lang="de"
+  head
+    {{ $itsTitle := index .Site.Data.titles.de .Title }}
+    {{ if $itsTitle }}
+    title {{ $itsTitle }}
+    {{ else }}
+    title {{.Title}}
+    {{ end }}
+
+    link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/main.css"
+    meta charset="utf-8"
+  body

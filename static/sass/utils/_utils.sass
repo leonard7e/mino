@@ -1,0 +1,24 @@
+@mixin mGradient ($position, $color1, $color2) 
+    background: -webkit-linear-gradient( $position, $color1, $color2) fixed
+    background: -o-linear-gradient( $position, $color1, $color2) fixed
+    background: -moz-linear-gradient( $position, $color1, $color2) fixed
+    background: linear-gradient( $position, $color1, $color2) fixed
+
+
+@mixin mColumns($ncols, $gap) 
+    -webkit-column-count: $ncols
+    -webkit-column-gap: $gap 
+    -moz-column-count: $ncols 
+    -moz-column-gap: $gap 
+    column-count: $ncols
+    column-gap: $gap
+
+@mixin mColumnSpan() 
+    -webkit-column-span: all
+    -moz-column-span: all
+    column-span: all
+
+@mixin mHyphens () 
+    -webkit-hyphens: auto
+    -moz-hyphens: auto
+    hyphens: auto

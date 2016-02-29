@@ -1,0 +1,25 @@
+// Background Colors
+html
+    background-color: $colThemeBkg
+    @include mGradient(top, darken($colThemeBkg,20%),lighten($colThemeBkg,30%))
+
+main>section
+    background-color: $colTheme1
+
+#itsMainNav ,
+#itsMainNav  li.menuToplevel ul
+    background-color: desaturate(lighten($colTheme2, 10%),70%)
+
+// Foreground Colors
+main > section > article > header > h1 a
+    color: $colTheme2
+
+#itsHeader
+    color: transparentize($colTheme1, 0.5)
+    
+#itsMainNav .navItem,
+#itsFooter a
+    color: $colTheme1
+
+#itsMainNav .navFolder 
+    color: mix($colTheme1,$colTheme2, 60%)

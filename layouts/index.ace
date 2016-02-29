@@ -1,0 +1,11 @@
+{{ partial "htmlroot" . }}
+  main
+    {{ partial "header" . }}
+    {{ partial "navigation" . }}
+    section#itsMainSection
+      article.fulltext
+        {{ range where .Data.Pages "Title" "_index"}}
+        div
+          |  {{ .Content }}
+        {{ end}}
+    {{ partial "footer" .}}

@@ -1,0 +1,9 @@
+{{ partial "htmlroot" . }}
+  main
+    {{ partial "header" . }}
+    {{ partial "navigation" . }}
+    section#itsMainSection
+      article.fulltext
+        div
+          |  {{ .Content }}
+    {{ partial "footer" .}}

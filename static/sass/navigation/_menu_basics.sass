@@ -1,0 +1,32 @@
+// Visibility of menu items
+#itsMainNav li.menuToplevel > nav,
+#itsMainNav li.menu > nav
+    display: none
+
+#itsMainNav li.menuToplevel:hover > nav,
+#itsMainNav li.menu:hover > nav
+    display: block
+    position: absolute
+
+
+// #itsMainNav li.menuToplevel:hover .navFolder::after,
+// #itsMainNav li.menu:hover .navFolder::after
+//     content: "  ▾"
+//     opacity: 0.4
+// 
+// #itsMainNav li.menuToplevel .navFolder::after,
+// #itsMainNav li.menu  .navFolder::after
+//     content: "  ▿"
+//     opacity: 0.4
+
+
+// Placement of menu items
+#itsMainNav li.menuToplevel
+    display: inline-block
+
+#itsMainNav li.menu
+    position: relative
+
+#itsMainNav li.menu > nav
+    left: 100%
+    top: 0

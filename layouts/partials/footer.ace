@@ -1,0 +1,5 @@
+#itsFooter
+  nav
+    {{ with .Site.Params.impressum }}
+    a href={{ .}} Impressum
+    {{ end }}
